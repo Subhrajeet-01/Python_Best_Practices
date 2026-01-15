@@ -1,0 +1,12 @@
+--------------------------------------------------
+Factory + Strategy (Zero if/else architecture)
+
+Goal: Build a payment system that is:
+
+- Extensible
+
+- Testable
+
+- Open for new payment modes
+
+- Closed for modification
