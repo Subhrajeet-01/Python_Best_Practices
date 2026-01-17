@@ -11,7 +11,7 @@ container = DIContainer()
 container.register(UserRepository, lambda: InMemoryUserRepository())
 container.register(RegisterUser, lambda: RegisterUser(container.resolve(UserRepository)))
 
-app = FastAPI()
+app = FastAPI()  # Create FastAPI app instance
 
 router = register_routes(container.resolve(RegisterUser))
 app.include_router(router)
